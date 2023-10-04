@@ -4,28 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Art Quest 2</title>
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <section class="app">
+        <section class="app w-5/6">
             <h1>Art Quest 2</h1>
             <div class="quiz">
-                <h2 id="question">Question</h2>
+                <h2 id="question" class="text-xl font-semibold">Question</h2>
                 <div id="answer">
-                    <button class="answer-btn">Answer 1</button>
-                    <button class="answer-btn">Answer 2</button>
-                    <button class="answer-btn">Answer 3</button>
-                    <button class="answer-btn">Answer 4</button>
+                    <button class="answer-btn w-full p-2.5 font-medium">Answer 1</button>
+                    <button class="answer-btn w-full p-2.5 font-medium">Answer 2</button>
+                    <button class="answer-btn w-full p-2.5 font-medium">Answer 3</button>
+                    <button class="answer-btn w-full p-2.5 font-medium">Answer 4</button>
                 </div>
                 <div id="result">Result</div>
-                <button id="next-btn">Next</button>
+                <button id="next-btn" class="p-2.5 font-medium">Next</button>
             </div>
             <div id="score">Score: <span id="score-value">0</span></div>
-            <button id="restart-btn">Restart</button>
+            <button id="restart-btn" class="m-1 items-center rounded-md bg-pink-50 px-3 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Restart</button>
         </section>
 
 
