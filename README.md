@@ -2,6 +2,6 @@ A personal project that showcases how to build a responsive dynamic web applicat
 
 "Tailwind" is used as a CSS library here.
 
-"Open Trivia Database", one of the public API, is used to make questions and ansewers in this project.
+"Open Trivia Database" and "the Trivia API", one of the public API, are used to make questions and ansewers in this project.
 
 Created by <Sachika>
