@@ -1,6 +1,3 @@
-
-//Quiz
-
 //Get and initialize data
 let currentQuestionIndex = 0;
 let score = 0;
@@ -18,6 +15,10 @@ function fetchData() {
         .then(data => {
             questions = data.results.slice(0, numberOfQuestions);
             showQuestion();
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            window.location.href = '404.html';
         });
 };
 
