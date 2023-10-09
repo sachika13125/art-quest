@@ -1,9 +1,9 @@
 // Navigation bar
 function toggleMobileMenu() {
     let mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.remove('hidden');
+    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+        mobileMenu.style.display = 'block';
     } else {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.style.display = 'none';
     }
 }
